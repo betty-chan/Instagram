@@ -1,0 +1,319 @@
+2020-12-04 16:10:20,968 INFO 22264 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-04 16:10:27,239 INFO 22264 [egg:core] dump config after load, 11ms
+2020-12-04 16:10:27,348 INFO 22264 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-04 16:10:27,348 INFO 22264 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-04 16:10:27,349 INFO 22264 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-04 16:10:27,350 INFO 22264 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-04 16:10:27,350 INFO 22264 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-04 16:10:27,350 INFO 22264 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-04 16:10:27,351 INFO 22264 [egg-watcher:agent] watcher start success
+2020-12-04 16:36:24,923 INFO 12296 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-04 16:36:25,718 INFO 12296 [egg:core] dump config after load, 10ms
+2020-12-04 16:36:25,831 INFO 12296 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-04 16:36:25,831 INFO 12296 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-04 16:36:25,832 INFO 12296 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-04 16:36:25,833 INFO 12296 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-04 16:36:25,833 INFO 12296 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-04 16:36:25,834 INFO 12296 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-04 16:36:25,834 INFO 12296 [egg-watcher:agent] watcher start success
+2020-12-04 16:57:08,471 INFO 23780 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-04 16:57:09,290 INFO 23780 [egg:core] dump config after load, 10ms
+2020-12-04 16:57:09,413 INFO 23780 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-04 16:57:09,414 INFO 23780 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-04 16:57:09,414 INFO 23780 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-04 16:57:09,415 INFO 23780 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-04 16:57:09,415 INFO 23780 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-04 16:57:09,416 INFO 23780 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-04 16:57:09,416 INFO 23780 [egg-watcher:agent] watcher start success
+2020-12-04 16:59:12,779 INFO 21120 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-04 16:59:13,610 INFO 21120 [egg:core] dump config after load, 11ms
+2020-12-04 16:59:13,732 INFO 21120 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-04 16:59:13,733 INFO 21120 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-04 16:59:13,734 INFO 21120 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-04 16:59:13,734 INFO 21120 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-04 16:59:13,734 INFO 21120 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-04 16:59:13,735 INFO 21120 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-04 16:59:13,735 INFO 21120 [egg-watcher:agent] watcher start success
+2020-12-04 16:59:13,980 INFO 21120 [egg:core] dump config after ready, 18ms
+2020-12-04 16:59:13,954 INFO 21120 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-12-04 17:01:07,834 INFO 23792 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-04 17:01:08,637 INFO 23792 [egg:core] dump config after load, 11ms
+2020-12-04 17:01:08,756 INFO 23792 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-04 17:01:08,756 INFO 23792 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-04 17:01:08,757 INFO 23792 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-04 17:01:08,758 INFO 23792 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-04 17:01:08,758 INFO 23792 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-04 17:01:08,758 INFO 23792 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-04 17:01:08,759 INFO 23792 [egg-watcher:agent] watcher start success
+2020-12-04 17:01:08,994 INFO 23792 [egg:core] dump config after ready, 12ms
+2020-12-04 17:01:08,974 INFO 23792 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2020-12-04 17:02:38,842 INFO 6336 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-04 17:02:39,649 INFO 6336 [egg:core] dump config after load, 11ms
+2020-12-04 17:02:39,768 INFO 6336 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-04 17:02:39,768 INFO 6336 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-04 17:02:39,769 INFO 6336 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-04 17:02:39,770 INFO 6336 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-04 17:02:39,770 INFO 6336 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-04 17:02:39,770 INFO 6336 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-04 17:02:39,771 INFO 6336 [egg-watcher:agent] watcher start success
+2020-12-04 17:02:40,010 INFO 6336 [egg:core] dump config after ready, 15ms
+2020-12-04 17:02:39,987 INFO 6336 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-12-04 17:20:13,644 INFO 3940 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-04 17:20:14,449 INFO 3940 [egg:core] dump config after load, 11ms
+2020-12-04 17:20:14,568 INFO 3940 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-04 17:20:14,568 INFO 3940 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-04 17:20:14,569 INFO 3940 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-04 17:20:14,569 INFO 3940 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-04 17:20:14,570 INFO 3940 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-04 17:20:14,570 INFO 3940 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-04 17:20:14,571 INFO 3940 [egg-watcher:agent] watcher start success
+2020-12-04 17:20:14,809 INFO 3940 [egg:core] dump config after ready, 14ms
+2020-12-04 17:20:14,788 INFO 3940 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-12-04 17:33:02,404 INFO 21172 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-04 17:33:03,237 INFO 21172 [egg:core] dump config after load, 10ms
+2020-12-04 17:33:03,357 INFO 21172 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-04 17:33:03,357 INFO 21172 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-04 17:33:03,358 INFO 21172 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-04 17:33:03,359 INFO 21172 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-04 17:33:03,359 INFO 21172 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-04 17:33:03,359 INFO 21172 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-04 17:33:03,360 INFO 21172 [egg-watcher:agent] watcher start success
+2020-12-04 17:33:03,599 INFO 21172 [egg:core] dump config after ready, 13ms
+2020-12-04 17:33:03,578 INFO 21172 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2020-12-04 17:53:37,483 INFO 21180 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-04 17:53:38,287 INFO 21180 [egg:core] dump config after load, 11ms
+2020-12-04 17:53:38,401 INFO 21180 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-04 17:53:38,401 INFO 21180 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-04 17:53:38,408 INFO 21180 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-04 17:53:38,409 INFO 21180 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-04 17:53:38,409 INFO 21180 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-04 17:53:38,409 INFO 21180 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-04 17:53:38,410 INFO 21180 [egg-watcher:agent] watcher start success
+2020-12-04 17:53:38,657 INFO 21180 [egg:core] dump config after ready, 13ms
+2020-12-04 17:53:38,631 INFO 21180 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-12-05 14:28:11,645 INFO 19760 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-05 14:28:17,738 INFO 19760 [egg:core] dump config after load, 10ms
+2020-12-05 14:28:17,860 INFO 19760 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-05 14:28:17,860 INFO 19760 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-05 14:28:17,861 INFO 19760 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-05 14:28:17,861 INFO 19760 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-05 14:28:17,862 INFO 19760 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-05 14:28:17,862 INFO 19760 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-05 14:28:17,863 INFO 19760 [egg-watcher:agent] watcher start success
+2020-12-05 14:28:18,108 INFO 19760 [egg:core] dump config after ready, 13ms
+2020-12-05 14:28:18,088 INFO 19760 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-12-05 15:12:40,239 INFO 21984 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-05 15:12:41,021 INFO 21984 [egg:core] dump config after load, 10ms
+2020-12-05 15:12:41,135 INFO 21984 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-05 15:12:41,136 INFO 21984 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-05 15:12:41,136 INFO 21984 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-05 15:12:41,137 INFO 21984 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-05 15:12:41,137 INFO 21984 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-05 15:12:41,137 INFO 21984 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-05 15:12:41,138 INFO 21984 [egg-watcher:agent] watcher start success
+2020-12-05 15:12:41,372 INFO 21984 [egg:core] dump config after ready, 13ms
+2020-12-05 15:12:41,351 INFO 21984 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-12-05 15:15:33,654 INFO 2688 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-05 15:15:34,438 INFO 2688 [egg:core] dump config after load, 10ms
+2020-12-05 15:15:34,551 INFO 2688 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-05 15:15:34,551 INFO 2688 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-05 15:15:34,552 INFO 2688 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-05 15:15:34,552 INFO 2688 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-05 15:15:34,553 INFO 2688 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-05 15:15:34,553 INFO 2688 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-05 15:15:34,553 INFO 2688 [egg-watcher:agent] watcher start success
+2020-12-05 15:15:34,768 INFO 2688 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-12-05 15:15:34,795 INFO 2688 [egg:core] dump config after ready, 19ms
+2020-12-05 15:55:55,784 INFO 21064 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-05 15:55:56,561 INFO 21064 [egg:core] dump config after load, 10ms
+2020-12-05 15:55:56,667 INFO 21064 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-05 15:55:56,667 INFO 21064 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-05 15:55:56,668 INFO 21064 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-05 15:55:56,669 INFO 21064 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-05 15:55:56,669 INFO 21064 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-05 15:55:56,669 INFO 21064 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-05 15:55:56,670 INFO 21064 [egg-watcher:agent] watcher start success
+2020-12-05 15:56:40,440 INFO 8600 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-05 15:56:41,230 INFO 8600 [egg:core] dump config after load, 11ms
+2020-12-05 15:56:41,348 INFO 8600 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-05 15:56:41,348 INFO 8600 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-05 15:56:41,349 INFO 8600 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-05 15:56:41,349 INFO 8600 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-05 15:56:41,350 INFO 8600 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-05 15:56:41,350 INFO 8600 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-05 15:56:41,351 INFO 8600 [egg-watcher:agent] watcher start success
+2020-12-05 15:56:41,585 INFO 8600 [egg:core] dump config after ready, 14ms
+2020-12-05 15:56:41,564 INFO 8600 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-12-05 16:01:09,667 INFO 8600 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-05 16:01:10,440 INFO 8600 [egg:core] dump config after load, 10ms
+2020-12-05 16:01:10,552 INFO 8600 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-05 16:01:10,552 INFO 8600 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-05 16:01:10,553 INFO 8600 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-05 16:01:10,554 INFO 8600 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-05 16:01:10,554 INFO 8600 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-05 16:01:10,555 INFO 8600 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-05 16:01:10,555 INFO 8600 [egg-watcher:agent] watcher start success
+2020-12-05 16:01:10,797 INFO 8600 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-12-05 16:01:10,818 INFO 8600 [egg:core] dump config after ready, 13ms
+2020-12-05 16:05:00,013 INFO 20920 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-05 16:05:00,807 INFO 20920 [egg:core] dump config after load, 11ms
+2020-12-05 16:05:00,926 INFO 20920 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-05 16:05:00,926 INFO 20920 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-05 16:05:00,927 INFO 20920 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-05 16:05:00,927 INFO 20920 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-05 16:05:00,927 INFO 20920 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-05 16:05:00,928 INFO 20920 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-05 16:05:00,928 INFO 20920 [egg-watcher:agent] watcher start success
+2020-12-05 16:05:01,143 INFO 20920 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-12-05 16:05:01,164 INFO 20920 [egg:core] dump config after ready, 13ms
+2020-12-05 16:06:03,232 INFO 21408 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-05 16:06:04,025 INFO 21408 [egg:core] dump config after load, 11ms
+2020-12-05 16:06:04,144 INFO 21408 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-05 16:06:04,144 INFO 21408 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-05 16:06:04,145 INFO 21408 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-05 16:06:04,145 INFO 21408 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-05 16:06:04,145 INFO 21408 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-05 16:06:04,146 INFO 21408 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-05 16:06:04,146 INFO 21408 [egg-watcher:agent] watcher start success
+2020-12-05 16:06:04,382 INFO 21408 [egg:core] dump config after ready, 13ms
+2020-12-05 16:06:04,361 INFO 21408 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-12-05 16:12:02,029 INFO 26216 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-12-05 16:12:02,812 INFO 26216 [egg:core] dump config after load, 10ms
+2020-12-05 16:12:02,917 INFO 26216 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2020-12-05 16:12:02,917 INFO 26216 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2020-12-05 16:12:02,918 INFO 26216 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2020-12-05 16:12:02,918 INFO 26216 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2020-12-05 16:12:02,919 INFO 26216 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2020-12-05 16:12:02,919 INFO 26216 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2020-12-05 16:12:02,920 INFO 26216 [egg-watcher:agent] watcher start success
+2020-12-05 16:12:03,155 INFO 26216 [egg:core] dump config after ready, 12ms
+2020-12-05 16:12:03,135 INFO 26216 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2021-01-08 15:00:53,897 INFO 20904 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-01-08 15:00:54,938 INFO 20904 [egg:core] dump config after load, 11ms
+2021-01-08 15:00:55,065 INFO 20904 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2021-01-08 15:00:55,065 INFO 20904 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2021-01-08 15:00:55,066 INFO 20904 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2021-01-08 15:00:55,067 INFO 20904 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2021-01-08 15:00:55,067 INFO 20904 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2021-01-08 15:00:55,067 INFO 20904 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2021-01-08 15:00:55,068 INFO 20904 [egg-watcher:agent] watcher start success
+2021-01-08 15:00:55,296 INFO 20904 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2021-01-08 15:00:55,317 INFO 20904 [egg:core] dump config after ready, 12ms
+2021-01-08 15:03:11,786 INFO 23424 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-01-08 15:03:12,579 INFO 23424 [egg:core] dump config after load, 10ms
+2021-01-08 15:03:12,686 INFO 23424 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2021-01-08 15:03:12,686 INFO 23424 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2021-01-08 15:03:12,687 INFO 23424 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2021-01-08 15:03:12,687 INFO 23424 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2021-01-08 15:03:12,688 INFO 23424 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2021-01-08 15:03:12,688 INFO 23424 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2021-01-08 15:03:12,689 INFO 23424 [egg-watcher:agent] watcher start success
+2021-01-08 15:03:12,909 INFO 23424 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2021-01-08 15:03:12,930 INFO 23424 [egg:core] dump config after ready, 13ms
+2021-01-08 15:14:47,147 INFO 22556 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-01-08 15:14:47,935 INFO 22556 [egg:core] dump config after load, 11ms
+2021-01-08 15:14:48,078 INFO 22556 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2021-01-08 15:14:48,078 INFO 22556 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2021-01-08 15:14:48,079 INFO 22556 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2021-01-08 15:14:48,080 INFO 22556 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2021-01-08 15:14:48,080 INFO 22556 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2021-01-08 15:14:48,080 INFO 22556 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2021-01-08 15:14:48,081 INFO 22556 [egg-watcher:agent] watcher start success
+2021-01-08 15:21:57,993 INFO 9152 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-01-08 15:21:58,774 INFO 9152 [egg:core] dump config after load, 10ms
+2021-01-08 15:21:58,880 INFO 9152 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2021-01-08 15:21:58,880 INFO 9152 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2021-01-08 15:21:58,881 INFO 9152 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2021-01-08 15:21:58,881 INFO 9152 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2021-01-08 15:21:58,881 INFO 9152 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2021-01-08 15:21:58,882 INFO 9152 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2021-01-08 15:21:58,882 INFO 9152 [egg-watcher:agent] watcher start success
+2021-01-08 15:22:40,425 INFO 19928 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-01-08 15:22:41,225 INFO 19928 [egg:core] dump config after load, 10ms
+2021-01-08 15:22:41,333 INFO 19928 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2021-01-08 15:22:41,333 INFO 19928 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2021-01-08 15:22:41,334 INFO 19928 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2021-01-08 15:22:41,334 INFO 19928 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2021-01-08 15:22:41,335 INFO 19928 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2021-01-08 15:22:41,335 INFO 19928 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2021-01-08 15:22:41,335 INFO 19928 [egg-watcher:agent] watcher start success
+2021-01-08 15:23:46,324 INFO 22960 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-01-08 15:23:47,124 INFO 22960 [egg:core] dump config after load, 11ms
+2021-01-08 15:23:47,233 INFO 22960 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2021-01-08 15:23:47,233 INFO 22960 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2021-01-08 15:23:47,234 INFO 22960 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2021-01-08 15:23:47,235 INFO 22960 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2021-01-08 15:23:47,235 INFO 22960 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2021-01-08 15:23:47,235 INFO 22960 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2021-01-08 15:23:47,236 INFO 22960 [egg-watcher:agent] watcher start success
+2021-01-08 15:28:03,470 INFO 24560 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-01-08 15:28:04,282 INFO 24560 [egg:core] dump config after load, 11ms
+2021-01-08 15:28:04,393 INFO 24560 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2021-01-08 15:28:04,393 INFO 24560 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2021-01-08 15:28:04,394 INFO 24560 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2021-01-08 15:28:04,394 INFO 24560 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2021-01-08 15:28:04,394 INFO 24560 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2021-01-08 15:28:04,395 INFO 24560 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2021-01-08 15:28:04,395 INFO 24560 [egg-watcher:agent] watcher start success
+2021-01-08 15:34:34,684 INFO 16996 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-01-08 15:34:35,480 INFO 16996 [egg:core] dump config after load, 10ms
+2021-01-08 15:34:35,586 INFO 16996 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2021-01-08 15:34:35,586 INFO 16996 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2021-01-08 15:34:35,587 INFO 16996 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2021-01-08 15:34:35,588 INFO 16996 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2021-01-08 15:34:35,588 INFO 16996 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2021-01-08 15:34:35,588 INFO 16996 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2021-01-08 15:34:35,589 INFO 16996 [egg-watcher:agent] watcher start success
+2021-01-08 15:34:35,842 INFO 16996 [egg:core] dump config after ready, 13ms
+2021-01-08 15:34:35,822 INFO 16996 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2021-01-08 15:36:21,300 INFO 22244 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-01-08 15:36:22,103 INFO 22244 [egg:core] dump config after load, 11ms
+2021-01-08 15:36:22,212 INFO 22244 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2021-01-08 15:36:22,212 INFO 22244 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2021-01-08 15:36:22,213 INFO 22244 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2021-01-08 15:36:22,213 INFO 22244 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2021-01-08 15:36:22,214 INFO 22244 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2021-01-08 15:36:22,214 INFO 22244 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2021-01-08 15:36:22,215 INFO 22244 [egg-watcher:agent] watcher start success
+2021-01-08 15:51:23,099 INFO 18708 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-01-08 15:51:23,921 INFO 18708 [egg:core] dump config after load, 11ms
+2021-01-08 15:51:24,033 INFO 18708 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2021-01-08 15:51:24,033 INFO 18708 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2021-01-08 15:51:24,034 INFO 18708 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2021-01-08 15:51:24,034 INFO 18708 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2021-01-08 15:51:24,035 INFO 18708 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2021-01-08 15:51:24,035 INFO 18708 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2021-01-08 15:51:24,036 INFO 18708 [egg-watcher:agent] watcher start success
+2021-01-08 15:59:59,159 INFO 22172 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-01-08 15:59:59,938 INFO 22172 [egg:core] dump config after load, 10ms
+2021-01-08 16:00:00,049 INFO 22172 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2021-01-08 16:00:00,049 INFO 22172 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2021-01-08 16:00:00,050 INFO 22172 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2021-01-08 16:00:00,050 INFO 22172 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2021-01-08 16:00:00,051 INFO 22172 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2021-01-08 16:00:00,051 INFO 22172 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2021-01-08 16:00:00,052 INFO 22172 [egg-watcher:agent] watcher start success
+2021-01-08 16:00:00,283 INFO 22172 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2021-01-08 16:00:00,304 INFO 22172 [egg:core] dump config after ready, 13ms
+2021-01-08 16:18:18,652 INFO 23372 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-01-08 16:18:19,415 INFO 23372 [egg:core] dump config after load, 10ms
+2021-01-08 16:18:19,567 INFO 23372 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2021-01-08 16:18:19,567 INFO 23372 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2021-01-08 16:18:19,568 INFO 23372 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2021-01-08 16:18:19,568 INFO 23372 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2021-01-08 16:18:19,569 INFO 23372 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2021-01-08 16:18:19,569 INFO 23372 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2021-01-08 16:18:19,570 INFO 23372 [egg-watcher:agent] watcher start success
+2021-01-08 16:18:19,833 INFO 23372 [egg:core] dump config after ready, 27ms
+2021-01-08 16:18:19,794 INFO 23372 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2021-01-08 16:20:28,030 INFO 20888 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-01-08 16:20:28,839 INFO 20888 [egg:core] dump config after load, 11ms
+2021-01-08 16:20:28,992 INFO 20888 [egg-watcher] Start watching: ["E:\\Instagram-master\\service\\app","E:\\Instagram-master\\service\\config","E:\\Instagram-master\\service\\mocks","E:\\Instagram-master\\service\\mocks_proxy","E:\\Instagram-master\\service\\app.js"]
+2021-01-08 16:20:28,992 INFO 20888 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app"
+2021-01-08 16:20:28,993 INFO 20888 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\config"
+2021-01-08 16:20:28,994 INFO 20888 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks"
+2021-01-08 16:20:28,994 INFO 20888 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\mocks_proxy"
+2021-01-08 16:20:28,994 INFO 20888 [egg-watcher] Start watching: "E:\\Instagram-master\\service\\app.js"
+2021-01-08 16:20:28,995 INFO 20888 [egg-watcher:agent] watcher start success
+2021-01-08 16:20:29,200 INFO 20888 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2021-01-08 16:20:29,220 INFO 20888 [egg:core] dump config after ready, 13ms

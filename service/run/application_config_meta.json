@@ -1,0 +1,356 @@
+{
+  "keys": "E:\\Instagram-master\\service\\config\\config.default.ts",
+  "middleware": "E:\\Instagram-master\\service\\config\\config.default.ts",
+  "basePath": "E:\\Instagram-master\\service\\config\\config.default.ts",
+  "security": {
+    "csrf": {
+      "enable": "E:\\Instagram-master\\service\\config\\config.default.ts",
+      "ignoreJSON": "E:\\Instagram-master\\service\\config\\config.default.ts",
+      "type": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "refererWhiteList": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "domainWhiteList": "E:\\Instagram-master\\service\\config\\config.default.ts",
+    "protocolWhiteList": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+    "xframe": {
+      "enable": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js"
+    }
+  },
+  "cors": {
+    "allowMethods": "E:\\Instagram-master\\service\\config\\config.default.ts"
+  },
+  "jwtSecret": "E:\\Instagram-master\\service\\config\\config.default.ts",
+  "authWhiteList": "E:\\Instagram-master\\service\\config\\config.default.ts",
+  "auth_cookie_name": "E:\\Instagram-master\\service\\config\\config.default.ts",
+  "passportLocal": {
+    "usernameField": "E:\\Instagram-master\\service\\config\\config.default.ts",
+    "passwordField": "E:\\Instagram-master\\service\\config\\config.default.ts"
+  },
+  "routerPlus": {
+    "enable": "E:\\Instagram-master\\service\\config\\config.default.ts",
+    "package": "E:\\Instagram-master\\service\\config\\config.default.ts"
+  },
+  "sourceUrl": "E:\\Instagram-master\\service\\config\\config.default.ts",
+  "view": {
+    "defaultViewEngine": "E:\\Instagram-master\\service\\config\\config.default.ts",
+    "mapping": {
+      ".tpl": "E:\\Instagram-master\\service\\config\\config.default.ts"
+    },
+    "root": "E:\\Instagram-master\\service\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "E:\\Instagram-master\\service\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "E:\\Instagram-master\\service\\node_modules\\egg-view\\config\\config.default.js"
+  },
+  "sequelize": {
+    "dialect": "E:\\Instagram-master\\service\\config\\config.local.ts",
+    "host": "E:\\Instagram-master\\service\\config\\config.local.ts",
+    "port": "E:\\Instagram-master\\service\\config\\config.local.ts",
+    "database": "E:\\Instagram-master\\service\\config\\config.local.ts",
+    "username": "E:\\Instagram-master\\service\\config\\config.local.ts",
+    "password": "E:\\Instagram-master\\service\\config\\config.local.ts",
+    "operatorsAliases": "E:\\Instagram-master\\service\\config\\config.local.ts"
+  },
+  "session": {
+    "maxAge": "E:\\Instagram-master\\service\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "E:\\Instagram-master\\service\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "E:\\Instagram-master\\service\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "E:\\Instagram-master\\service\\node_modules\\egg-session\\config\\config.default.js"
+  },
+  "helper": {
+    "shtml": "E:\\Instagram-master\\service\\node_modules\\egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "E:\\Instagram-master\\service\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "E:\\Instagram-master\\service\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "E:\\Instagram-master\\service\\node_modules\\egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "E:\\Instagram-master\\service\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "E:\\Instagram-master\\service\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "E:\\Instagram-master\\service\\node_modules\\egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "E:\\Instagram-master\\service\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "E:\\Instagram-master\\service\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "E:\\Instagram-master\\service\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "E:\\Instagram-master\\service\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "E:\\Instagram-master\\service\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "E:\\Instagram-master\\service\\node_modules\\egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "E:\\Instagram-master\\service\\node_modules\\egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "E:\\Instagram-master\\service\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "E:\\Instagram-master\\service\\node_modules\\egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "E:\\Instagram-master\\service\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "E:\\Instagram-master\\service\\node_modules\\egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "E:\\Instagram-master\\service\\node_modules\\egg-schedule\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "E:\\Instagram-master\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "autoFields": "E:\\Instagram-master\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "E:\\Instagram-master\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "E:\\Instagram-master\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "E:\\Instagram-master\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "E:\\Instagram-master\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "E:\\Instagram-master\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "E:\\Instagram-master\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "E:\\Instagram-master\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "E:\\Instagram-master\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "E:\\Instagram-master\\service\\node_modules\\egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "E:\\Instagram-master\\service\\node_modules\\egg-multipart\\config\\config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "E:\\Instagram-master\\service\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "E:\\Instagram-master\\service\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "E:\\Instagram-master\\service\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "E:\\Instagram-master\\service\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "E:\\Instagram-master\\service\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideIgnore": "E:\\Instagram-master\\service\\node_modules\\egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "E:\\Instagram-master\\service\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "E:\\Instagram-master\\service\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "E:\\Instagram-master\\service\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "E:\\Instagram-master\\service\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "E:\\Instagram-master\\service\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "E:\\Instagram-master\\service\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "E:\\Instagram-master\\service\\node_modules\\egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "E:\\Instagram-master\\service\\node_modules\\egg-static\\config\\config.default.js",
+    "dir": "E:\\Instagram-master\\service\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "E:\\Instagram-master\\service\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "E:\\Instagram-master\\service\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "E:\\Instagram-master\\service\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "E:\\Instagram-master\\service\\node_modules\\egg-static\\config\\config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "E:\\Instagram-master\\service\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "throwOnUndefined": "E:\\Instagram-master\\service\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "trimBlocks": "E:\\Instagram-master\\service\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "lstripBlocks": "E:\\Instagram-master\\service\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "cache": "E:\\Instagram-master\\service\\node_modules\\egg-view-nunjucks\\config\\config.local.js"
+  },
+  "mysql": {
+    "default": {
+      "database": "E:\\Instagram-master\\service\\node_modules\\egg-mysql\\config\\config.default.js",
+      "connectionLimit": "E:\\Instagram-master\\service\\node_modules\\egg-mysql\\config\\config.default.js"
+    },
+    "app": "E:\\Instagram-master\\service\\node_modules\\egg-mysql\\config\\config.default.js",
+    "agent": "E:\\Instagram-master\\service\\node_modules\\egg-mysql\\config\\config.default.js"
+  },
+  "env": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "name": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "cookies": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "maxIpsCount": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "pkg": {
+    "name": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "version": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "description": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "private": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "egg": {
+      "typescript": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "scripts": {
+      "start": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "stop": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "dev": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "debug": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "test-local": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "test": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "cov": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "tsc": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "ci": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "autod": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "lint": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "clean": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "dependencies": {
+      "egg": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-cors": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-mysql": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-passport": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-passport-local": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-router-plus": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-scripts": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-sequelize": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-view-nunjucks": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "jsonwebtoken": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "mysql2": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "qiniu": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "uuid": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "devDependencies": {
+      "@types/mocha": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "@types/node": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "@types/supertest": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "autod": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "autod-egg": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-bin": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-ci": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-mock": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "egg-ts-helper": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "sequelize-cli": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "tslib": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "tslint": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "typescript": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "engines": {
+      "node": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "ci": {
+      "version": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "repository": {
+      "type": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "url": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "eslintIgnore": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "author": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "license": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "baseDir": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "textLimit": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "strict": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "depth": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "onerror": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "env": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "level": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "request": {
+      "timeout": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "logging": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "port": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+  },
+  "onClientError": "E:\\Instagram-master\\service\\node_modules\\egg\\config\\config.default.js"
+}

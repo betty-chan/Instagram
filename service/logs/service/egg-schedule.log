@@ -1,0 +1,6 @@
+2021-01-08 16:20:33,196 INFO 24448 [egg-schedule]: register schedule E:\Instagram-master\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-01-08 16:20:33,196 INFO 24448 [egg-schedule]: register schedule E:\Instagram-master\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-01-08 16:20:33,196 INFO 24448 [egg-schedule]: register schedule E:\Instagram-master\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-01-08 16:20:52,565 INFO 20888 [Timer] E:\Instagram-master\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 43747441ms at 2021-01-09 04:30:00.006
+2021-01-08 16:20:52,566 INFO 20888 [Timer] E:\Instagram-master\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 27547435ms at 2021-01-09 00:00:00.001
+2021-01-08 16:20:52,566 INFO 20888 [Timer] E:\Instagram-master\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 27548434ms at 2021-01-09 00:00:01.000

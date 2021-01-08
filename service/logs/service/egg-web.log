@@ -1,0 +1,13 @@
+2021-01-08 16:20:33,117 INFO 24448 [egg:logger] init all loggers with options: {"dir":"E:\\Instagram-master\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-01-08 16:20:33,198 INFO 24448 [egg-multipart] stream mode enable
+2021-01-08 16:20:45,255 INFO 24448 [egg-static] starting static serve /public/ -> E:\Instagram-master\service\app\public
+2021-01-08 16:20:45,261 INFO 24448 [egg-security] use methodnoallow middleware
+2021-01-08 16:20:45,266 INFO 24448 [egg-security] use noopen middleware
+2021-01-08 16:20:45,269 INFO 24448 [egg-security] use nosniff middleware
+2021-01-08 16:20:45,271 INFO 24448 [egg-security] use xssProtection middleware
+2021-01-08 16:20:45,273 INFO 24448 [egg-security] use xframe middleware
+2021-01-08 16:20:45,275 INFO 24448 [egg-security] use dta middleware
+2021-01-08 16:20:45,275 INFO 24448 [egg-security] compose 6 middlewares into one security middleware
+2021-01-08 16:20:52,275 INFO 24448 [egg:core] dump config after load, 12ms
+2021-01-08 16:20:52,505 INFO 24448 [egg-watcher:application] watcher start success
+2021-01-08 16:20:52,551 INFO 24448 [egg:core] dump config after ready, 14ms

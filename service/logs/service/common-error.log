@@ -1,0 +1,342 @@
+2021-01-08 16:22:05,665 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'user_id' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at Function.findOne (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1917:12)
+    at UserService.login (E:\Instagram-master\service\app\service\user.ts:65:27)
+    at UserController.loginIn (E:\Instagram-master\service\app\controller\login.ts:28:23)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:7:7
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = '466150516@qq.com' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = '466150516@qq.com' LIMIT 1;"}
+sql: "SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = '466150516@qq.com' LIMIT 1;"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:22:27,489 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'user_id' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at Function.findOne (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1917:12)
+    at UserService.login (E:\Instagram-master\service\app\service\user.ts:65:27)
+    at UserController.loginIn (E:\Instagram-master\service\app\controller\login.ts:28:23)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:7:7
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = '466150516@qq.com' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = '466150516@qq.com' LIMIT 1;"}
+sql: "SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = '466150516@qq.com' LIMIT 1;"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:23:01,934 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'user_id' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at Function.findOne (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1917:12)
+    at UserService.login (E:\Instagram-master\service\app\service\user.ts:65:27)
+    at UserController.loginIn (E:\Instagram-master\service\app\controller\login.ts:28:23)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:7:7
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = 'codingzx@gmail.com' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = 'codingzx@gmail.com' LIMIT 1;"}
+sql: "SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = 'codingzx@gmail.com' LIMIT 1;"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:23:17,526 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'user_id' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at Function.findOne (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1917:12)
+    at UserService.login (E:\Instagram-master\service\app\service\user.ts:65:27)
+    at UserController.loginIn (E:\Instagram-master\service\app\controller\login.ts:28:23)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:7:7
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = 'shawzhou' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = 'shawzhou' LIMIT 1;"}
+sql: "SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = 'shawzhou' LIMIT 1;"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:23:51,045 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'user_id' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at Function.findOne (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1917:12)
+    at UserService.login (E:\Instagram-master\service\app\service\user.ts:65:27)
+    at UserController.loginIn (E:\Instagram-master\service\app\controller\login.ts:28:23)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:7:7
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = 'shawzhou' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = 'shawzhou' LIMIT 1;"}
+sql: "SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = 'shawzhou' LIMIT 1;"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:23:57,302 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'user_id' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at Function.findOne (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1917:12)
+    at UserService.login (E:\Instagram-master\service\app\service\user.ts:65:27)
+    at UserController.loginIn (E:\Instagram-master\service\app\controller\login.ts:28:23)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:7:7
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = 'shawzhou' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = 'shawzhou' LIMIT 1;"}
+sql: "SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = 'shawzhou' LIMIT 1;"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:27:43,933 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'avatar_url' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at Function.findOne (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1917:12)
+    at UserService.login (E:\Instagram-master\service\app\service\user.ts:65:27)
+    at UserController.loginIn (E:\Instagram-master\service\app\controller\login.ts:28:23)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:7:7
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'avatar_url' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = '466150516@qq.com' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'avatar_url' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = '466150516@qq.com' LIMIT 1;"}
+sql: "SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = '466150516@qq.com' LIMIT 1;"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:27:52,768 ERROR 24448 [-/127.0.0.1/-/1ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'avatar_url' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at Function.findOne (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1917:12)
+    at UserService.login (E:\Instagram-master\service\app\service\user.ts:65:27)
+    at UserController.loginIn (E:\Instagram-master\service\app\controller\login.ts:28:23)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:7:7
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'avatar_url' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = '466150516@qq.com' LIMIT 1;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'avatar_url' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = '466150516@qq.com' LIMIT 1;"}
+sql: "SELECT `id`, `user_id` AS `userId`, `username`, `email`, `password`, `avatar_url` AS `avatarUrl`, `mobile`, `prefix`, `abstract`, `sex`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `users` WHERE `users`.`email` = '466150516@qq.com' LIMIT 1;"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:29:28,255 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'user_id' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at UserService.getUserList (E:\Instagram-master\service\app\service\user.ts:150:27)
+    at FriendController.notFollowList (E:\Instagram-master\service\app\controller\friend.ts:31:26)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:20:7
+    at E:\Instagram-master\service\app\middleware\error_handler.ts:17:9
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `user_id` AS `userId` FROM `follow` AS `follow` WHERE `follow`.`status` = 1 AND `follow`.`followed_id` = 'cbd6eb6093e74c7290aad936e8a9a2cd';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `user_id` AS `userId` FROM `follow` AS `follow` WHERE `follow`.`status` = 1 AND `follow`.`followed_id` = 'cbd6eb6093e74c7290aad936e8a9a2cd';"}
+sql: "SELECT `user_id` AS `userId` FROM `follow` AS `follow` WHERE `follow`.`status` = 1 AND `follow`.`followed_id` = 'cbd6eb6093e74c7290aad936e8a9a2cd';"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:29:28,281 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'user_id' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at followService.findFollow (E:\Instagram-master\service\app\service\follow.ts:37:16)
+    at TopicController.friendsTopicList (E:\Instagram-master\service\app\controller\topic.ts:73:25)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:20:7
+    at E:\Instagram-master\service\app\middleware\error_handler.ts:17:9
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `followed_id` AS `followedId`, `status`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `follow` AS `follow` WHERE `follow`.`status` = 1 AND `follow`.`followed_id` = 'cbd6eb6093e74c7290aad936e8a9a2cd';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `followed_id` AS `followedId`, `status`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `follow` AS `follow` WHERE `follow`.`status` = 1 AND `follow`.`followed_id` = 'cbd6eb6093e74c7290aad936e8a9a2cd';"}
+sql: "SELECT `id`, `user_id` AS `userId`, `followed_id` AS `followedId`, `status`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `follow` AS `follow` WHERE `follow`.`status` = 1 AND `follow`.`followed_id` = 'cbd6eb6093e74c7290aad936e8a9a2cd';"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:31:25,189 ERROR 24448 [-/127.0.0.1/-/1ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'follow.followed_id' in 'where clause'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at UserService.getUserList (E:\Instagram-master\service\app\service\user.ts:150:27)
+    at FriendController.notFollowList (E:\Instagram-master\service\app\controller\friend.ts:31:26)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:20:7
+    at E:\Instagram-master\service\app\middleware\error_handler.ts:17:9
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'follow.followed_id' in 'where clause'","sql":"SELECT `user_id` AS `userId` FROM `follow` AS `follow` WHERE `follow`.`status` = 1 AND `follow`.`followed_id` = 'cbd6eb6093e74c7290aad936e8a9a2cd';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'follow.followed_id' in 'where clause'","sql":"SELECT `user_id` AS `userId` FROM `follow` AS `follow` WHERE `follow`.`status` = 1 AND `follow`.`followed_id` = 'cbd6eb6093e74c7290aad936e8a9a2cd';"}
+sql: "SELECT `user_id` AS `userId` FROM `follow` AS `follow` WHERE `follow`.`status` = 1 AND `follow`.`followed_id` = 'cbd6eb6093e74c7290aad936e8a9a2cd';"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:31:25,196 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'followed_id' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at followService.findFollow (E:\Instagram-master\service\app\service\follow.ts:37:16)
+    at TopicController.friendsTopicList (E:\Instagram-master\service\app\controller\topic.ts:73:25)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:20:7
+    at E:\Instagram-master\service\app\middleware\error_handler.ts:17:9
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'followed_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `followed_id` AS `followedId`, `status`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `follow` AS `follow` WHERE `follow`.`status` = 1 AND `follow`.`followed_id` = 'cbd6eb6093e74c7290aad936e8a9a2cd';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'followed_id' in 'field list'","sql":"SELECT `id`, `user_id` AS `userId`, `followed_id` AS `followedId`, `status`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `follow` AS `follow` WHERE `follow`.`status` = 1 AND `follow`.`followed_id` = 'cbd6eb6093e74c7290aad936e8a9a2cd';"}
+sql: "SELECT `id`, `user_id` AS `userId`, `followed_id` AS `followedId`, `status`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `follow` AS `follow` WHERE `follow`.`status` = 1 AND `follow`.`followed_id` = 'cbd6eb6093e74c7290aad936e8a9a2cd';"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:32:30,392 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'topic_id' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at TopicService.queryTopicList (E:\Instagram-master\service\app\service\topic.ts:48:16)
+    at TopicController.friendsTopicList (E:\Instagram-master\service\app\controller\topic.ts:87:22)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:20:7
+    at E:\Instagram-master\service\app\middleware\error_handler.ts:17:9
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'topic_id' in 'field list'","sql":"SELECT `topic_id` AS `topicId`, `user_id` AS `userId`, `topic_title` AS `topicTitle`, `topic_img` AS `topicImg`, `address`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `topic` AS `topic` WHERE `topic`.`user_id` IN ('e51c2d2e4366433fb35f017c69468149', 'cbd6eb6093e74c7290aad936e8a9a2cd') ORDER BY `topic`.`created_at` DESC;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'topic_id' in 'field list'","sql":"SELECT `topic_id` AS `topicId`, `user_id` AS `userId`, `topic_title` AS `topicTitle`, `topic_img` AS `topicImg`, `address`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `topic` AS `topic` WHERE `topic`.`user_id` IN ('e51c2d2e4366433fb35f017c69468149', 'cbd6eb6093e74c7290aad936e8a9a2cd') ORDER BY `topic`.`created_at` DESC;"}
+sql: "SELECT `topic_id` AS `topicId`, `user_id` AS `userId`, `topic_title` AS `topicTitle`, `topic_img` AS `topicImg`, `address`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `topic` AS `topic` WHERE `topic`.`user_id` IN ('e51c2d2e4366433fb35f017c69468149', 'cbd6eb6093e74c7290aad936e8a9a2cd') ORDER BY `topic`.`created_at` DESC;"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:35:18,731 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'topic_id' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at TopicService.queryTopicList (E:\Instagram-master\service\app\service\topic.ts:48:16)
+    at TopicController.friendsTopicList (E:\Instagram-master\service\app\controller\topic.ts:87:22)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:20:7
+    at E:\Instagram-master\service\app\middleware\error_handler.ts:17:9
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'topic_id' in 'field list'","sql":"SELECT `topic_id` AS `topicId`, `user_id` AS `userId`, `topic_title` AS `topicTitle`, `topic_img` AS `topicImg`, `address`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `topic` AS `topic` WHERE `topic`.`user_id` IN ('e51c2d2e4366433fb35f017c69468149', 'cbd6eb6093e74c7290aad936e8a9a2cd') ORDER BY `topic`.`created_at` DESC;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'topic_id' in 'field list'","sql":"SELECT `topic_id` AS `topicId`, `user_id` AS `userId`, `topic_title` AS `topicTitle`, `topic_img` AS `topicImg`, `address`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `topic` AS `topic` WHERE `topic`.`user_id` IN ('e51c2d2e4366433fb35f017c69468149', 'cbd6eb6093e74c7290aad936e8a9a2cd') ORDER BY `topic`.`created_at` DESC;"}
+sql: "SELECT `topic_id` AS `topicId`, `user_id` AS `userId`, `topic_title` AS `topicTitle`, `topic_img` AS `topicImg`, `address`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `topic` AS `topic` WHERE `topic`.`user_id` IN ('e51c2d2e4366433fb35f017c69468149', 'cbd6eb6093e74c7290aad936e8a9a2cd') ORDER BY `topic`.`created_at` DESC;"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:37:50,303 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'topic_title' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at TopicService.queryTopicList (E:\Instagram-master\service\app\service\topic.ts:48:16)
+    at TopicController.friendsTopicList (E:\Instagram-master\service\app\controller\topic.ts:87:22)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:20:7
+    at E:\Instagram-master\service\app\middleware\error_handler.ts:17:9
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'topic_title' in 'field list'","sql":"SELECT `topic_id` AS `topicId`, `user_id` AS `userId`, `topic_title` AS `topicTitle`, `topic_img` AS `topicImg`, `address`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `topic` AS `topic` WHERE `topic`.`user_id` IN ('e51c2d2e4366433fb35f017c69468149', 'cbd6eb6093e74c7290aad936e8a9a2cd') ORDER BY `topic`.`created_at` DESC;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'topic_title' in 'field list'","sql":"SELECT `topic_id` AS `topicId`, `user_id` AS `userId`, `topic_title` AS `topicTitle`, `topic_img` AS `topicImg`, `address`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `topic` AS `topic` WHERE `topic`.`user_id` IN ('e51c2d2e4366433fb35f017c69468149', 'cbd6eb6093e74c7290aad936e8a9a2cd') ORDER BY `topic`.`created_at` DESC;"}
+sql: "SELECT `topic_id` AS `topicId`, `user_id` AS `userId`, `topic_title` AS `topicTitle`, `topic_img` AS `topicImg`, `address`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `topic` AS `topic` WHERE `topic`.`user_id` IN ('e51c2d2e4366433fb35f017c69468149', 'cbd6eb6093e74c7290aad936e8a9a2cd') ORDER BY `topic`.`created_at` DESC;"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:38:36,829 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'topic_img' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at TopicService.queryTopicList (E:\Instagram-master\service\app\service\topic.ts:48:16)
+    at TopicController.friendsTopicList (E:\Instagram-master\service\app\controller\topic.ts:87:22)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:20:7
+    at E:\Instagram-master\service\app\middleware\error_handler.ts:17:9
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'topic_img' in 'field list'","sql":"SELECT `topic_id` AS `topicId`, `user_id` AS `userId`, `topic_title` AS `topicTitle`, `topic_img` AS `topicImg`, `address`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `topic` AS `topic` WHERE `topic`.`user_id` IN ('e51c2d2e4366433fb35f017c69468149', 'cbd6eb6093e74c7290aad936e8a9a2cd') ORDER BY `topic`.`created_at` DESC;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'topic_img' in 'field list'","sql":"SELECT `topic_id` AS `topicId`, `user_id` AS `userId`, `topic_title` AS `topicTitle`, `topic_img` AS `topicImg`, `address`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `topic` AS `topic` WHERE `topic`.`user_id` IN ('e51c2d2e4366433fb35f017c69468149', 'cbd6eb6093e74c7290aad936e8a9a2cd') ORDER BY `topic`.`created_at` DESC;"}
+sql: "SELECT `topic_id` AS `topicId`, `user_id` AS `userId`, `topic_title` AS `topicTitle`, `topic_img` AS `topicImg`, `address`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `topic` AS `topic` WHERE `topic`.`user_id` IN ('e51c2d2e4366433fb35f017c69468149', 'cbd6eb6093e74c7290aad936e8a9a2cd') ORDER BY `topic`.`created_at` DESC;"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:39:26,978 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'discuss_id' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at TopicService.queryDiscuss (E:\Instagram-master\service\app\service\topic.ts:181:16)
+    at TopicService.topicDetailHanderl (E:\Instagram-master\service\app\service\topic.ts:72:23)
+    at TopicController.friendsTopicList (E:\Instagram-master\service\app\controller\topic.ts:96:24)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:20:7
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'discuss_id' in 'field list'","sql":"SELECT `discuss_id` AS `discussId`, `topic_id` AS `topicId`, `user_id` AS `userId`, `reply_name` AS `replyName`, `reply_content` AS `replyContent`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `discuss` AS `discuss` WHERE `discuss`.`topic_id` = 4;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'discuss_id' in 'field list'","sql":"SELECT `discuss_id` AS `discussId`, `topic_id` AS `topicId`, `user_id` AS `userId`, `reply_name` AS `replyName`, `reply_content` AS `replyContent`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `discuss` AS `discuss` WHERE `discuss`.`topic_id` = 4;"}
+sql: "SELECT `discuss_id` AS `discussId`, `topic_id` AS `topicId`, `user_id` AS `userId`, `reply_name` AS `replyName`, `reply_content` AS `replyContent`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `discuss` AS `discuss` WHERE `discuss`.`topic_id` = 4;"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
+2021-01-08 16:51:28,612 ERROR 24448 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'discuss_id' in 'field list'
+    at Query.formatError (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:239:16)
+    at Query.run (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\mysql\query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\Instagram-master\service\node_modules\sequelize\lib\sequelize.js:619:16
+    at MySQLQueryInterface.select (E:\Instagram-master\service\node_modules\sequelize\lib\dialects\abstract\query-interface.js:938:12)
+    at Function.findAll (E:\Instagram-master\service\node_modules\sequelize\lib\model.js:1753:21)
+    at TopicService.queryDiscuss (E:\Instagram-master\service\app\service\topic.ts:181:16)
+    at TopicService.topicDetailHanderl (E:\Instagram-master\service\app\service\topic.ts:72:23)
+    at TopicController.friendsTopicList (E:\Instagram-master\service\app\controller\topic.ts:96:24)
+    at E:\Instagram-master\service\app\middleware\authorization.ts:20:7
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'discuss_id' in 'field list'","sql":"SELECT `discuss_id` AS `discussId`, `topic_id` AS `topicId`, `user_id` AS `userId`, `reply_name` AS `replyName`, `reply_content` AS `replyContent`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `discuss` AS `discuss` WHERE `discuss`.`topic_id` = 4;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'discuss_id' in 'field list'","sql":"SELECT `discuss_id` AS `discussId`, `topic_id` AS `topicId`, `user_id` AS `userId`, `reply_name` AS `replyName`, `reply_content` AS `replyContent`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `discuss` AS `discuss` WHERE `discuss`.`topic_id` = 4;"}
+sql: "SELECT `discuss_id` AS `discussId`, `topic_id` AS `topicId`, `user_id` AS `userId`, `reply_name` AS `replyName`, `reply_content` AS `replyContent`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `discuss` AS `discuss` WHERE `discuss`.`topic_id` = 4;"
+parameters: undefined
+pid: 24448
+hostname: PC-20200908FRFL
+
