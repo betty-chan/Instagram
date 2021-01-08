@@ -25,8 +25,8 @@ CREATE TABLE `discuss` (
   `discuss_id` int(10) NOT NULL AUTO_INCREMENT COMMENT '评论id',
   `topic_id` int(10) NOT NULL COMMENT '帖子id',
   `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '用户id',
-  `replyName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '回复者姓�?,
-  `replyContent` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '回复内容',
+  `reply_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '回复者姓�?,
+  `reply_content` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '回复内容',
   `created_at` datetime(4) NOT NULL ON UPDATE CURRENT_TIMESTAMP(4) COMMENT '回复创建时间',
   `updated_at` datetime(4) NOT NULL,
   PRIMARY KEY (`discuss_id`) USING BTREE
