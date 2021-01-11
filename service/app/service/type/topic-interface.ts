@@ -9,6 +9,10 @@ export interface insertTopicParams {
     topicTitle: string, // 帖子标题
     userId: string // 用户id
 }
+// 删除帖子参数
+export interface deleteTopicParams {
+    topicId: string, // 图片地址
+}
 
 
 // 新增评论参数

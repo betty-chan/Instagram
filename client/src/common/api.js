@@ -3,7 +3,7 @@ import instance from './axiosInstace.js';
 // 注册
 exports.register = (data) => {
     return instance.post('/login/register', data);
- };
+};
 
 // 登录
 exports.login = (data) => {
@@ -13,7 +13,7 @@ exports.login = (data) => {
 exports.signout = (data) => {
     return instance.get('/login/signout', data);
 };
-  
+
 
 
 
@@ -38,6 +38,10 @@ exports.updatePersonalInfo = (data) => {
 // 新增帖子
 exports.addTopic = (data) => {
     return instance.post('/topic/add', data);
+}
+// 新增帖子
+exports.deleteTopic = (data) => {
+    return instance.post('/topic/delete', data);
 }
 
 // 点赞

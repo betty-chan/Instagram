@@ -1,0 +1,5 @@
+/service/node_modules
+/client/node_modules
+/service/logs/service
+/service/logs
+/service/run

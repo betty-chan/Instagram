@@ -6,11 +6,12 @@ import Avatar from '@components/avatar'
 import Comments from '@components/comments'
 import store from '@/src/store'
 import { Icon } from 'antd';
+import API from '@common/api.js'
 
 let defaultState = {
     alertStatus: false,
-    alertTip:"提示",
-    closeAlert:function(){},
+    alertTip: "提示",
+    closeAlert: function () { },
     userInfo: {
         avatarUrl: '',
         username: null,
@@ -25,32 +26,39 @@ let defaultState = {
         topicLikeCounts: 20
     },
     discuss: [],
-    addComments: () => {}, // 添加评论
-    topicLikeFn: () => {} // 点赞
+    addComments: () => { }, // 添加评论
+    topicLikeFn: () => { } // 点赞
 }
 
-class TopicDialog extends React.Component{
-    
+class TopicDialog extends React.Component {
+
     state = {
         ...defaultState
     }
- 
+    //删除帖子
+    delete = async () => {
+        await API.deleteTopic({
+            topicId: this.state.topic.topicId
+        })
+        this.confirm();
+        location.reload();
+    }
     // 关闭弹框
     confirm = () => {
         this.setState({
-            alertStatus:false
+            alertStatus: false
         })
         this.state.closeAlert();
         this.stopBodyScroll(false)
     }
 
     // 打开弹窗
-    open =(options)=>{
+    open = (options) => {
         options = options || {};
         options.alertStatus = true;
         this.setState({
-          ...defaultState,
-          ...options
+            ...defaultState,
+            ...options
         })
         this.stopBodyScroll(true)
     }
@@ -84,7 +92,7 @@ class TopicDialog extends React.Component{
     topicLikeFn = (...params) => {
         this.setState({
             topic: Object.assign(
-                {}, 
+                {},
                 this.state.topic,
                 ...params
             )
@@ -92,34 +100,34 @@ class TopicDialog extends React.Component{
         this.state.topicLikeFn(...params)
     }
 
-    render () {
+    render() {
         let avatarStyle = {
             width: '40px',
             height: '40px'
         }
-        let {topic, topicIndex} = this.state
+        let { topic, topicIndex } = this.state
         return (
-            <section className={Style['topic-dialog']} style={this.state.alertStatus? {display:'block'}:{display:'none'}}>
+            <section className={Style['topic-dialog']} style={this.state.alertStatus ? { display: 'block' } : { display: 'none' }}>
                 <div className="container">
                     <Icon type="close" className="close-btn" onClick={this.confirm} />
                     <article className="topic">
                         <div className="carousel">
-                            <Carousel imageList={topic.topicImgList} showSlickDot={false}/>
+                            <Carousel imageList={topic.topicImgList} showSlickDot={false} />
                         </div>
                         <div className="comment">
                             <header>
-                                <Avatar userInfo={this.state.userInfo} avatarStyle={avatarStyle}/>
+                                <Avatar userInfo={this.state.userInfo} avatarStyle={avatarStyle} />
+                                <span onClick={this.delete}>删除帖子</span>
                             </header>
-
                             {/* 评论区 */}
-                            <Comments 
+                            <Comments
                                 topicLikeFn={this.topicLikeFn}
                                 addComments={this.addComments}
                                 createdAt={topic.created_at}
                                 store={store}
                                 topicIndex={topicIndex}
-                                discuss={this.state.discuss} 
-                                topicId={topic.topicId} 
+                                discuss={this.state.discuss}
+                                topicId={topic.topicId}
                                 topicLike={topic.topicLike}
                                 dialog={true}
                                 dotCounts={topic.topicLikeCounts}>
@@ -135,9 +143,9 @@ class TopicDialog extends React.Component{
 
 let div = document.createElement('div');
 document.body.appendChild(div);
- 
+
 let Box = ReactDOM.render(React.createElement(
     TopicDialog
-),div);
- 
+), div);
+
 export default Box;　

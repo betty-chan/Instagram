@@ -1,13 +1,13 @@
 import { Controller } from 'egg'
 
 class TopicController extends Controller {
-    
+
     /**
      * 新增帖子
      */
-    public async addTopic () {
-        const {ctx} = this;
-        const {topicImg, topicTitle} = ctx.request.body
+    public async addTopic() {
+        const { ctx } = this;
+        const { topicImg, topicTitle } = ctx.request.body
 
         let userId = ctx.user.userId
 
@@ -18,17 +18,25 @@ class TopicController extends Controller {
         }
 
         await ctx.service.topic.insertTopic(newTopic)
-        
+
         ctx.returnBody(200, "发帖成功")
     }
 
+    /**
+     * 删除帖子
+     */
+    public async deleteTopic() {
+        const { ctx } = this;
+        await ctx.service.topic.deleteTopic(ctx.request.body)
+        ctx.returnBody(200, "删帖成功")
+    }
 
     /**
      * 新增评论
      */
-    public async addDiscuss () {
-        const {ctx} = this;
-        const {topicId, replyContent} = ctx.request.body
+    public async addDiscuss() {
+        const { ctx } = this;
+        const { topicId, replyContent } = ctx.request.body
 
         let userId = ctx.user.userId
         // 获取并填充数据
@@ -42,8 +50,8 @@ class TopicController extends Controller {
             userId,
         }
 
-        let discuss: any =  await ctx.service.topic.insertDiscuss(newDiscuss)
-        
+        let discuss: any = await ctx.service.topic.insertDiscuss(newDiscuss)
+
         discuss && ctx.returnBody(200, "评论成功")
         !discuss && ctx.returnBody(400, "网络异常请稍后重试")
     }
@@ -52,29 +60,29 @@ class TopicController extends Controller {
     /**
      * 获取帖子详情
      */
-    public async topicDetail () {
-        const {ctx} = this;
-        const {topicId} = ctx.request.query
+    public async topicDetail() {
+        const { ctx } = this;
+        const { topicId } = ctx.request.query
 
         let topicDetail = await ctx.service.topic.topicDetailHanderl(topicId)
-        
+
         ctx.returnBody(200, "成功", topicDetail)
     }
 
     /**
      * 获取帖子列表
      */
-    public async friendsTopicList () {
-        const {ctx} = this;
+    public async friendsTopicList() {
+        const { ctx } = this;
 
         let userId = ctx.user.userId
 
         // 查询帖子详情
-        let follower =  await ctx.service.follow.findFollow({
+        let follower = await ctx.service.follow.findFollow({
             followedId: userId,
             status: 1
         })
-        
+
         // 处理需要查询用户帖子的userId
         let followList = follower.map((item) => {
             return item.userId
@@ -103,9 +111,9 @@ class TopicController extends Controller {
     /**
      * 给帖子点赞
      */
-    public async putLikeTopic () {
-        const {ctx} = this;
-        const {topicId, status} = ctx.request.body
+    public async putLikeTopic() {
+        const { ctx } = this;
+        const { topicId, status } = ctx.request.body
 
         let userId = ctx.user.userId
 
@@ -123,7 +131,7 @@ class TopicController extends Controller {
 
         // 未曾创建进行创建操作，否则进行更新
         await ctx.service.topic.putTopicLike(query, topicStatus)
-        
+
         ctx.returnBody(200, "更新成功", {
             status: +status
         })
@@ -132,8 +140,8 @@ class TopicController extends Controller {
     /**
      * 搜索帖子
      */
-    public async searchTopic () {
-        const {search} = this.ctx.request.query
+    public async searchTopic() {
+        const { search } = this.ctx.request.query
 
         const Op = this.app.Sequelize.Op
         let topics = await this.ctx.service.topic.queryTopicList({
@@ -154,8 +162,8 @@ class TopicController extends Controller {
 
 
     // 获取用户发布帖子数量
-    public async queryTopic () {
-        let {ctx} = this
+    public async queryTopic() {
+        let { ctx } = this
         // 查询点赞数量
         let topicCounts = await ctx.service.topic.queryTopicCounts({
             userId: ctx.user.userId

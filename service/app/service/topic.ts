@@ -1,5 +1,5 @@
 import { Service } from 'egg';
-import { insertTopicParams, insertDiscussParams, queryTopicParams, queryTopicCountsParams} from './type/topic-interface'
+import { insertTopicParams, deleteTopicParams, insertDiscussParams, queryTopicParams, queryTopicCountsParams } from './type/topic-interface'
 
 
 
@@ -12,18 +12,28 @@ export default class TopicService extends Service {
      * 新增帖子
      * @interface insertTopicParams
      */
-    public async insertTopic (topicParams: insertTopicParams) {
-        let {ctx} = this
+    public async insertTopic(topicParams: insertTopicParams) {
+        let { ctx } = this
 
         return await ctx.model.Topic.create(topicParams);
+    }
+
+    /*
+     * 删除帖子
+     * @interface deleteTopicParams
+     */
+    public async deleteTopic(topicParams: deleteTopicParams) {
+        let { ctx } = this
+        await ctx.model.TopicLike.destroy({ where: topicParams })
+        return await ctx.model.Topic.destroy({ where: topicParams });
     }
 
     /*
      * 新增评论
      * @interface insertTopicParams
      */
-    public async insertDiscuss (discussParams: insertDiscussParams) {
-        let {ctx} = this
+    public async insertDiscuss(discussParams: insertDiscussParams) {
+        let { ctx } = this
 
         return await ctx.model.Discuss.create(discussParams);
     }
@@ -32,8 +42,8 @@ export default class TopicService extends Service {
      * 查询帖子详情
      * @interface insertTopicParams
      */
-    public async queryTopicDetail (query: queryTopicParams) {
-        let {ctx} = this
+    public async queryTopicDetail(query: queryTopicParams) {
+        let { ctx } = this
         return await ctx.model.Topic.findOne({
             where: query
         })
@@ -43,11 +53,11 @@ export default class TopicService extends Service {
      * 查询帖子列表
      * @interface insertTopicParams
      */
-    public async queryTopicList (query) {
-        let {ctx} = this
+    public async queryTopicList(query) {
+        let { ctx } = this
         return await ctx.model.Topic.findAll({
             where: query,
-            order:  [['created_at', 'DESC']]
+            order: [['created_at', 'DESC']]
         })
     }
 
@@ -122,7 +132,7 @@ export default class TopicService extends Service {
      * @interface insertTopicParams
      */
     public async queryTopicLike(query: queryTopicParams) {
-        let {ctx} = this
+        let { ctx } = this
         return await ctx.model.TopicLike.findOne({
             where: query
         });
@@ -167,16 +177,16 @@ export default class TopicService extends Service {
 
         return await ctx.model.Topic.findAndCountAll({
             where: query,
-            order:  [['created_at', 'DESC']]
+            order: [['created_at', 'DESC']]
         });
     }
-    
+
     /*
      * 查询评论详情
      * @interface insertTopicParams
      */
-    public async queryDiscuss (query: queryTopicParams) {
-        let {ctx} = this
+    public async queryDiscuss(query: queryTopicParams) {
+        let { ctx } = this
 
         return await ctx.model.Discuss.findAll({
             where: query
@@ -188,8 +198,8 @@ export default class TopicService extends Service {
      * 查询评论详情
      * @interface insertTopicParams
      */
-    public async countsTopic (query: queryTopicParams) {
-        let {ctx} = this
+    public async countsTopic(query: queryTopicParams) {
+        let { ctx } = this
 
         return await ctx.model.Discuss.findAll({
             where: query
