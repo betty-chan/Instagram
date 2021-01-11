@@ -7,26 +7,22 @@ class UserController extends Controller {
      */
 
     // 注册
-    public async register () {
-        const {ctx} = this;
-        const {password, username, email} = ctx.request.body
-
+    public async register() {
+        const { ctx } = this;
+        const { password, username, email } = ctx.request.body
         // 错误处理
         if (!this.__errNotice) return
-
         // 注册成功返回体
-        await ctx.service.user.register({ password, username, email});
+        await ctx.service.user.register({ password, username, email });
 
     }
 
     // 登录
-    public async loginIn () {
-        const {ctx} = this;
-        const {password, email} = ctx.request.body
-
+    public async loginIn() {
+        const { ctx } = this;
+        const { password, email } = ctx.request.body
         // 登录
-        const token = await ctx.service.user.login({password, email})
-
+        const token = await ctx.service.user.login({ password, email })
         // set cookie
         if (token) {
             // id存入Cookie, 用于验证过期.
@@ -46,7 +42,7 @@ class UserController extends Controller {
     }
 
     // 退出登录
-    public async signOut () {
+    public async signOut() {
         const { ctx } = this;
         ctx.logout();
         ctx.cookies.set(this.config.auth_cookie_name, ""); // cookie 有效期30天
@@ -54,9 +50,9 @@ class UserController extends Controller {
     }
 
     // 参数异常函数
-    private __errNotice () {
-        const {ctx} = this;
-        const {mobile, password, code, username, email} = ctx.request.body
+    private __errNotice() {
+        const { ctx } = this;
+        const { mobile, password, code, username, email } = ctx.request.body
         // 参数校验
         let message;
         if (!mobile || !email) {
@@ -68,7 +64,6 @@ class UserController extends Controller {
         } else if (!password) {
             message = '密码不能为空'
         }
-
         // 抛出异常
         if (message) {
             ctx.throw(400, message);

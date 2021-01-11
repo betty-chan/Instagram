@@ -14,7 +14,6 @@ export default class TopicService extends Service {
      */
     public async insertTopic(topicParams: insertTopicParams) {
         let { ctx } = this
-
         return await ctx.model.Topic.create(topicParams);
     }
 
@@ -34,7 +33,6 @@ export default class TopicService extends Service {
      */
     public async insertDiscuss(discussParams: insertDiscussParams) {
         let { ctx } = this
-
         return await ctx.model.Discuss.create(discussParams);
     }
 
@@ -67,38 +65,30 @@ export default class TopicService extends Service {
      */
     public async topicDetailHanderl(topicId) {
         const { ctx } = this;
-
-
         // 查询帖子详情
         let topic = await ctx.service.topic.queryTopicDetail({
             topicId: +topicId // 帖子id
         })
-
         let userId = topic.userId
         // 获取并填充数据
         let user = await this.service.user.getUserByUserId(userId)
-
         // 查询帖子评论
         let discuss = await ctx.service.topic.queryDiscuss({
             topicId: +topicId // 帖子id
             // userId: ctx.user.userId
         })
-
         // 查询用户是否已点赞
         let topicLike = await ctx.service.topic.queryTopicLike({
             topicId: +topicId, // 帖子id
             userId: ctx.user.userId,
             status: 1
         })
-
         // 查询点赞数量
         let topicLikeCounts = await ctx.service.topic.queryTopicLikeCounts({
             topicId: +topicId, // 帖子id
             // userId: ctx.user.userId,
             status: 1
         })
-
-
         // 处理帖子数据
         let disscussList = discuss.map((item) => {
             return {
@@ -107,7 +97,6 @@ export default class TopicService extends Service {
                 userId: item.userId
             }
         })
-
         // 返回帖子详情
         const topicDetail = {
             userInfo: {
@@ -117,6 +106,7 @@ export default class TopicService extends Service {
             },
             topic: {
                 topicImgList: JSON.parse(topic.topicImg),
+                topicTitle: topic.topicTitle,
                 created_at: topic.created_at,
                 topicId,
                 topicLike: !!topicLike,
@@ -138,7 +128,6 @@ export default class TopicService extends Service {
         });
     }
 
-
     /*
      * 创建或更新点赞状态
      * @interface insertTopicParams
@@ -146,7 +135,6 @@ export default class TopicService extends Service {
     public async putTopicLike(query: queryTopicParams, topicStatus) {
         let { ctx } = this
         let result = await this.queryTopicLike(query)
-
         if (!result) {
             return await ctx.model.TopicLike.create(topicStatus)
         } else {
@@ -162,7 +150,6 @@ export default class TopicService extends Service {
      */
     public async queryTopicLikeCounts(query: queryTopicParams) {
         let { ctx } = this
-
         return await ctx.model.TopicLike.findAndCountAll({
             where: query
         });
@@ -174,7 +161,6 @@ export default class TopicService extends Service {
      */
     public async queryTopicCounts(query: queryTopicCountsParams) {
         let { ctx } = this
-
         return await ctx.model.Topic.findAndCountAll({
             where: query,
             order: [['created_at', 'DESC']]
@@ -187,12 +173,10 @@ export default class TopicService extends Service {
      */
     public async queryDiscuss(query: queryTopicParams) {
         let { ctx } = this
-
         return await ctx.model.Discuss.findAll({
             where: query
         });
     }
-
 
     /*
      * 查询评论详情
@@ -200,11 +184,8 @@ export default class TopicService extends Service {
      */
     public async countsTopic(query: queryTopicParams) {
         let { ctx } = this
-
         return await ctx.model.Discuss.findAll({
             where: query
         });
     }
-
-
 }

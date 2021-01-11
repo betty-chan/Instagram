@@ -13,7 +13,7 @@ import { connect } from "react-redux";
     }
 )
 class Comments extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             replyContent: '',
@@ -24,11 +24,11 @@ class Comments extends React.Component {
         this._handleKeyPress = this._handleKeyPress.bind(this)
     }
 
-    handelChange (event){
-        this.setState({replyContent:event.target.value})
+    handelChange(event) {
+        this.setState({ replyContent: event.target.value })
     }
 
-    __showMoreComments () {
+    __showMoreComments() {
         this.setState({
             showMoreComments: true
         })
@@ -36,31 +36,31 @@ class Comments extends React.Component {
 
 
     // 聚焦
-    focus () {
+    focus() {
         this.refs.textInput.focus();
     }
 
     // 点赞
     async topicLike() {
-        let response = await API.topicLike({ topicId: this.props.topicId, status: this.props.topicLike? 0 : 1 })
+        let response = await API.topicLike({ topicId: this.props.topicId, status: this.props.topicLike ? 0 : 1 })
 
         // 确定点赞数，status: 1点赞，0取消
         let dotCounts;
-        if (response.data.status){
+        if (response.data.status) {
             dotCounts = this.props.dotCounts + 1;
         } else {
             dotCounts = this.props.dotCounts - 1 >= 0 ? this.props.dotCounts - 1 : 0;
         }
         // 更新点赞状态
         this.props.topicLikeFn({
-            topicLikeCounts: dotCounts, 
+            topicLikeCounts: dotCounts,
             topicLike: response.data.status === 1,
             index: this.props.topicIndex
         })
     }
 
     // 添加评论
-    async _handleKeyPress (event) {
+    async _handleKeyPress(event) {
         if (event.key === 'Enter') {
             if (!this.state.replyContent) {
                 notification['error']({
@@ -69,11 +69,11 @@ class Comments extends React.Component {
                 return
             }
 
-            let response = await API.addDiscuss({topicId: this.props.topicId,replyContent: this.state.replyContent})
-			notification['success']({
-				message: response.message
+            let response = await API.addDiscuss({ topicId: this.props.topicId, replyContent: this.state.replyContent })
+            notification['success']({
+                message: response.message
             })
-            
+
 
             // 添加评论
             this.props.addComments({
@@ -94,7 +94,7 @@ class Comments extends React.Component {
         if (this.props.createdAt) {
             // 距离现在过去了多少秒
             let date = (new Date() - new Date(this.props.createdAt)) / 1000;
-            
+
             // 过去了多少天
             let days = Math.floor(date / (60 * 60 * 24))
             let hours = Math.floor(date / (60 * 60))
@@ -109,7 +109,7 @@ class Comments extends React.Component {
         return ''
     }
 
-    render () {
+    render() {
         const CommentsList = () => {
             return (
                 <ul className={`comments-list ${this.props.dialog && 'fill'}`}>
@@ -120,17 +120,17 @@ class Comments extends React.Component {
                             </li>
                             : ""
                     }
-                    { 
-                        this.props.discuss.map((item,index) => {
+                    {
+                        this.props.discuss.map((item, index) => {
                             // 非弹窗展示三个
-                            if (this.props.dialog || index!==3) {
+                            if (this.props.dialog || index !== 3) {
                                 return (
                                     <li className={`content ${(index > 3 && !this.props.dialog) && 'hidden'} ${this.state.showMoreComments && 'no-hidden'}`} key={index}>
                                         <span className="username  u-f-black">{item.replyName}</span>
                                         <span className="replay-content u-f-black-blod">{item.replyContent}</span>
                                     </li>
                                 )
-                            }  else {
+                            } else {
                                 // 显示所有部分内容
                                 return (
                                     <div key={index}>
@@ -139,11 +139,11 @@ class Comments extends React.Component {
                                             <span className="replay-content u-f-black-blod">{item.replyContent}</span>
                                         </li>
                                         {
-                                            this.props.discuss.length > 4?
-                                             <li className={`content show-more u-f-lightblack2 ${this.state.showMoreComments && 'hidden'}`}>
-                                                <span onClick={this.__showMoreComments.bind(this)}>显示所有</span>
-                                            </li>
-                                            : ''
+                                            this.props.discuss.length > 4 ?
+                                                <li className={`content show-more u-f-lightblack2 ${this.state.showMoreComments && 'hidden'}`}>
+                                                    <span onClick={this.__showMoreComments.bind(this)}>显示所有</span>
+                                                </li>
+                                                : ''
                                         }
                                     </div>
                                 )
@@ -156,38 +156,32 @@ class Comments extends React.Component {
         return (
             <div className={Style['comments-section']}>
                 {
-                    this.props.dialog?
+                    this.props.dialog ?
                         <CommentsList />
-                        :''
+                        : ''
                 }
                 <div className="opetions">
                     <div className="fl-left">
                         <span className={`favorite  ${this.props.topicLike && 'active'}`} onClick={this.topicLike.bind(this)}></span>
-                        <span className="comments" onClick={this.focus.bind(this)}></span>
+                        <span >{this.props.dotCounts}</span>
                     </div>
                     <span className="fl-right collect"></span>
                 </div>
-                {
-                    this.props.dotCounts?
-                    <div className="dot-counts u-f-black">{this.props.dotCounts}次赞</div>
-                    :
-                    <div className="dot-counts u-f-black">抢先 点赞</div>
-                }
                 {/* 弹窗类型、与列表类型，评论列表位置不同 */}
                 {
-                    !this.props.dialog?
+                    !this.props.dialog ?
                         <CommentsList />
-                        :''
+                        : ''
                 }
                 <div className="release-time u-f-lightblack2">{this._handlerCommentTime()}</div>
                 <div className="add-comments">
-                    <input type="text" 
+                    <input type="text"
                         ref="textInput"
                         className="u-f-black"
-                        placeholder="添加评论..." 
-                        onChange={this.handelChange.bind(this)} 
-                        value={this.state.replyContent} 
-                        onKeyPress={this._handleKeyPress}/>
+                        placeholder="添加评论..."
+                        onChange={this.handelChange.bind(this)}
+                        value={this.state.replyContent}
+                        onKeyPress={this._handleKeyPress} />
                     <span className="more"></span>
                 </div>
             </div>

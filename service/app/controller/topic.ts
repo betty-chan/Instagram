@@ -8,17 +8,13 @@ class TopicController extends Controller {
     public async addTopic() {
         const { ctx } = this;
         const { topicImg, topicTitle } = ctx.request.body
-
         let userId = ctx.user.userId
-
         let newTopic = {
             topicImg: JSON.stringify(topicImg),
             topicTitle: topicTitle,
             userId,
         }
-
         await ctx.service.topic.insertTopic(newTopic)
-
         ctx.returnBody(200, "发帖成功")
     }
 
@@ -37,11 +33,9 @@ class TopicController extends Controller {
     public async addDiscuss() {
         const { ctx } = this;
         const { topicId, replyContent } = ctx.request.body
-
         let userId = ctx.user.userId
         // 获取并填充数据
         let user = await this.service.user.getUserByUserId(userId)
-
         // 新帖子
         let newDiscuss = {
             topicId: topicId,
@@ -49,13 +43,10 @@ class TopicController extends Controller {
             replyName: user.username,
             userId,
         }
-
         let discuss: any = await ctx.service.topic.insertDiscuss(newDiscuss)
-
         discuss && ctx.returnBody(200, "评论成功")
         !discuss && ctx.returnBody(400, "网络异常请稍后重试")
     }
-
 
     /**
      * 获取帖子详情
@@ -63,9 +54,7 @@ class TopicController extends Controller {
     public async topicDetail() {
         const { ctx } = this;
         const { topicId } = ctx.request.query
-
         let topicDetail = await ctx.service.topic.topicDetailHanderl(topicId)
-
         ctx.returnBody(200, "成功", topicDetail)
     }
 
@@ -74,23 +63,18 @@ class TopicController extends Controller {
      */
     public async friendsTopicList() {
         const { ctx } = this;
-
         let userId = ctx.user.userId
-
         // 查询帖子详情
         let follower = await ctx.service.follow.findFollow({
             followedId: userId,
             status: 1
         })
-
         // 处理需要查询用户帖子的userId
         let followList = follower.map((item) => {
             return item.userId
         })
         followList.push(userId)
-
         // 获取每个帖子详情、评论，发帖人信息
-
         const Op = this.app.Sequelize.Op
         let topics = await ctx.service.topic.queryTopicList({
             userId: {
@@ -98,13 +82,11 @@ class TopicController extends Controller {
             }
         })
         let topicList: any = [];
-
         // 将所有帖子处理完毕
         for (let topic of topics) {
             let item = await ctx.service.topic.topicDetailHanderl(topic.topicId)
             topicList.push(item)
         }
-
         topicList && ctx.returnBody(200, "成功", topicList)
     }
 
@@ -114,9 +96,7 @@ class TopicController extends Controller {
     public async putLikeTopic() {
         const { ctx } = this;
         const { topicId, status } = ctx.request.body
-
         let userId = ctx.user.userId
-
         // 新帖子
         let topicStatus = {
             topicId: topicId,
@@ -128,10 +108,8 @@ class TopicController extends Controller {
             topicId: topicId,
             userId,
         }
-
         // 未曾创建进行创建操作，否则进行更新
         await ctx.service.topic.putTopicLike(query, topicStatus)
-
         ctx.returnBody(200, "更新成功", {
             status: +status
         })
@@ -142,7 +120,6 @@ class TopicController extends Controller {
      */
     public async searchTopic() {
         const { search } = this.ctx.request.query
-
         const Op = this.app.Sequelize.Op
         let topics = await this.ctx.service.topic.queryTopicList({
             topicTitle: {
@@ -150,16 +127,13 @@ class TopicController extends Controller {
             }
         })
         let topicList: any = [];
-
         // 将所有帖子处理完毕
         for (let topic of topics) {
             let item = await this.ctx.service.topic.topicDetailHanderl(topic.topicId)
             topicList.push(item)
         }
-
         this.ctx.returnBody(200, "成功", topicList)
     }
-
 
     // 获取用户发布帖子数量
     public async queryTopic() {
@@ -168,7 +142,6 @@ class TopicController extends Controller {
         let topicCounts = await ctx.service.topic.queryTopicCounts({
             userId: ctx.user.userId
         })
-
         return topicCounts
     }
 }

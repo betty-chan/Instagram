@@ -13,13 +13,11 @@ export default class followService extends Service {
      */
     public async followUser(followUser: followUserParams) {
         let { ctx } = this
-
         const obj = await ctx.model.Follow.findOne({
             where: {
                 userId: followUser.userId
             }
         })
-
         if (obj) { // update
             return await obj.update(followUser);
         } else { // insert
@@ -33,7 +31,6 @@ export default class followService extends Service {
      */
     public async findFollow(query) {
         let { ctx } = this
-
         return await ctx.model.Follow.findAll({
             where: query
         })
@@ -45,7 +42,6 @@ export default class followService extends Service {
 
     public async findFollowCounts(query) {
         let { ctx } = this
-
         return await ctx.model.Follow.findAndCountAll({
             where: query
         })

@@ -15,7 +15,7 @@ module.exports = {
    * @param message // 返回内容
    * @param data // 返回内容
    */
-  returnBody (status, message, data = {}) {
+  returnBody(status, message, data = {}) {
     this.status = status
     this.body = {
       data,
@@ -28,13 +28,12 @@ module.exports = {
    * @param obj // 转换对象
    * @return newObj // 返回转换完成的新对象
    */
-  humpToUnderline (obj) {
+  humpToUnderline(obj) {
     let newKey = obj.keys()
     let newObj = {}
     let humpReg = /([A-Z])/g
-
     newKey.forEach((item) => {
-      newObj[item.replace(humpReg,"_$1").toLowerCase()] = obj[item]
+      newObj[item.replace(humpReg, "_$1").toLowerCase()] = obj[item]
     })
     return newObj
   }

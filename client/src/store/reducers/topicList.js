@@ -7,6 +7,7 @@ const defaultValue = [
         },
         topic: {
             topicImgList: [],
+            topicTitle: "",
             createdAt: '',
             topicLikeCounts: 0 // 点赞数
         },
@@ -19,9 +20,9 @@ const topicList = (state = defaultValue, action) => {
         case 'ADD_TOPICLIST':
             return [...action.info]
         case 'ADD_COMMENT':
-            return addComments(state,action.info)
+            return addComments(state, action.info)
         case 'TOPIC_LIKE':
-            return topicLike(state,action.info)
+            return topicLike(state, action.info)
         default:
             return state
     }
@@ -29,7 +30,7 @@ const topicList = (state = defaultValue, action) => {
 
 
 // 点赞
-function topicLike (state, {
+function topicLike(state, {
     index, topicLikeCounts, topicLike
 }) {
     let newArray = [...state]
@@ -46,7 +47,7 @@ function topicLike (state, {
 
 
 //  添加评论
-function addComments (state, {
+function addComments(state, {
     index, replyContent, replyName
 }) {
     let newArray = [...state]
@@ -54,7 +55,7 @@ function addComments (state, {
         replyName,
         replyContent
     }
-    
+
     newArray[index].discuss.push(sourceComment)
     return newArray
 }

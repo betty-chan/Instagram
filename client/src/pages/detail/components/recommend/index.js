@@ -13,7 +13,7 @@ import { withRouter } from 'react-router'
     }
 )
 class Recommend extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.setLeftFn = myUtil.debunce(this.setLeftFn, 200)
     }
@@ -26,7 +26,7 @@ class Recommend extends React.Component {
         },
         hadSetScrollFn: false
     }
-    
+
     // 设置边缘
     setLeftFn = () => {
         if (!this.refs.recommend) return
@@ -50,7 +50,7 @@ class Recommend extends React.Component {
     // 检测是否需要贴附
     attachFn = () => {
         let isAttach = window.scrollY >= 78
-    
+
         if (isAttach !== this.state.attach.isAttach) {
             let attach = Object.assign({}, this.state.attach, {
                 isAttach
@@ -61,13 +61,13 @@ class Recommend extends React.Component {
         }
     }
 
-    componentDidMount () {
+    componentDidMount() {
         this.setLeftFn()
-        
+
         window.addEventListener('resize', this.setLeftFn)
     }
 
-    componentWillUnmount(){
+    componentWillUnmount() {
         this.setState = (state, callback) => {
             return;
         };
@@ -77,8 +77,8 @@ class Recommend extends React.Component {
     }
 
 
-    render () {
-        const { userInfo, followList} = this.props
+    render() {
+        const { userInfo, followList } = this.props
         let avatarStyle = {
             width: '50px',
             height: '50px'
@@ -89,14 +89,14 @@ class Recommend extends React.Component {
         }
 
         return (
-            <div 
-                style={{ left: this.state.attach.left + 'px', top: this.state.attach.top + 'px'}}
-                className={`${Style.recommend} ${this.state.attach.isAttach && 'is-attach'}`} 
+            <div
+                style={{ left: this.state.attach.left + 'px', top: this.state.attach.top + 'px' }}
+                className={`${Style.recommend} ${this.state.attach.isAttach && 'is-attach'}`}
                 ref="recommend">
                 <header className="header">
-                    <Avatar userInfo={userInfo} avatarStyle={avatarStyle}/>
+                    <Avatar userInfo={userInfo} avatarStyle={avatarStyle} />
                 </header>
-                <section className="post" onClick={()=> this.props.togglePostTopic()}>
+                <section className="post" onClick={() => this.props.togglePostTopic()}>
                     发帖
                 </section>
 
@@ -108,31 +108,27 @@ class Recommend extends React.Component {
                 <section className="container">
                     <nav className="title">推荐关注</nav>
                     {
-                    followList.length === 0
-                    ?<p className="notice">暂无推荐</p>
-                    :<ul className="friend_photo">
-                        {/* <p className="notice">推荐关注</p> */}
-                        {
-                            followList.map((item, index)=>{
-                                return (
-                                    <li className="list" key={index}>
-                                        <Avatar userInfo={item} avatarStyle={avatarStyle2} usernameStyle={{width: '120px', fontSize: '12px'}} abstractStyle={{width: '120px', fontSize: '12px'}}/>
-                                        {
-                                            item.hasFollow
-                                                ? <span onClick={() => { this.props.setFollowStatus(index, false) }}>已关注</span>
-                                                : <span className="follow" onClick={() => {this.props.setFollowStatus(index, true)}}>关注</span>
-                                        }
-                                    </li>
-                                )
-                            })
-                        }
-                        {/* <p className="more">全部》</p> */}
-                    </ul>
+                        followList.length === 0
+                            ? <p className="notice">暂无推荐</p>
+                            : <ul className="friend_photo">
+                                {/* <p className="notice">推荐关注</p> */}
+                                {
+                                    followList.map((item, index) => {
+                                        return (
+                                            <li className="list" key={index}>
+                                                <Avatar userInfo={item} avatarStyle={avatarStyle2} usernameStyle={{ width: '120px', fontSize: '12px' }} abstractStyle={{ width: '120px', fontSize: '12px' }} />
+                                                {
+                                                    item.hasFollow
+                                                        ? <span onClick={() => { this.props.setFollowStatus(index, false) }}>已关注</span>
+                                                        : <span className="follow" onClick={() => { this.props.setFollowStatus(index, true) }}>关注</span>
+                                                }
+                                            </li>
+                                        )
+                                    })
+                                }
+                                {/* <p className="more">全部》</p> */}
+                            </ul>
                     }
-                </section>
-                <section className="introduce">
-                    <p>关于我们·支持·新闻中心·API·工作·隐私·条款·目录·个人主页·话题标签·语言</p>
-                    <p className="brand">@ 2018 shawzhou</p>
                 </section>
             </div>
         )

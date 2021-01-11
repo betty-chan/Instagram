@@ -3,9 +3,10 @@
   width: 613px;
   .article {
     margin-bottom: 70px;
-    box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 4px 10px 10px 4px rgba(0, 0, 0, 0.16);
     overflow: hidden;
     border-radius: 3px;
+    padding: 0px 10px;
 
     .header {
       display: flex;
@@ -17,8 +18,8 @@
     }
     
     .container {
-      height: 450px;
-      width: 613px;
+      height: 440px;
+      width: 600px;
       background-color: #f0f0f0;
       background-image: url('~@assets/image/light.gif');
       background-size: 100% 100%;

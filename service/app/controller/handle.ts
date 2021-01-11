@@ -6,8 +6,8 @@ import { Controller } from 'egg'
 
 class HandlerController extends Controller {
 
-    public async getQiniuToken () {
-        const {ctx} = this
+    public async getQiniuToken() {
+        const { ctx } = this
         let token = await ctx.service.qiniu.getQiniuToken()
         ctx.returnBody(200, "获取token成功", {
             token: token,
@@ -15,8 +15,8 @@ class HandlerController extends Controller {
         })
     }
 
-    public async uploadImage () {
-        const {ctx} = this
+    public async uploadImage() {
+        const { ctx } = this
         const stream = await ctx.getFileStream()
         await ctx.service.qiniu.upload(stream)
     }

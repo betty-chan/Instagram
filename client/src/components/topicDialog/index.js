@@ -117,7 +117,11 @@ class TopicDialog extends React.Component {
                         <div className="comment">
                             <header>
                                 <Avatar userInfo={this.state.userInfo} avatarStyle={avatarStyle} />
-                                <span onClick={this.delete}>删除帖子</span>
+                                {/* {
+                                    if(this.state.userInfo.account == ){
+                                        <span onClick={this.delete}>删除帖子</span>
+                                    }
+                                } */}
                             </header>
                             {/* 评论区 */}
                             <Comments

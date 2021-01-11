@@ -13,7 +13,6 @@ export default class qiniuService extends Service {
     private accessKey: string = '';
     private secretKey: string = '';
     private publicBucketDomain = 'http://piyhxgz90.bkt.clouddn.com';
-
     private options: qiniuOptioin = {
         scope: 'instagram',
         expires: 7200
@@ -22,7 +21,7 @@ export default class qiniuService extends Service {
     /**
      * 获取七牛上传token
      */
-    public async getQiniuToken () {
+    public async getQiniuToken() {
         if (!this.accessKey || !this.secretKey || !this.publicBucketDomain) {
             this.ctx.throw(400, '请配置七牛鉴权参数')
         }
@@ -36,24 +35,20 @@ export default class qiniuService extends Service {
     /**
      * 上传图片
      */
-     public async upload (stream: any) {
-
-        let {ctx} = this
-
+    public async upload(stream: any) {
+        let { ctx } = this
         let config = new qiniu.conf.Config();
         // 空间对应的机房
         config.zone = qiniu.zone.Zone_z2;
-
         // 初始化上传方法
-        let formUploader  = new qiniu.form_up.FormUploader(config);
+        let formUploader = new qiniu.form_up.FormUploader(config);
         let putExtra = new qiniu.form_up.PutExtra();
         // 获取上传token
         let uploadToken = this.getQiniuToken()
-        
         formUploader.putFile(uploadToken, '', stream, putExtra, (respErr,
             respBody, respInfo) => {
             if (respErr) {
-              throw respErr;
+                throw respErr;
             }
             if (respInfo.statusCode == 200) {
                 ctx.returnBody(200, "上传成功", {
@@ -64,8 +59,6 @@ export default class qiniuService extends Service {
             } else {
                 ctx.returnBody(respInfo.statusCode, "上传失败")
             }
-          });
-     }
-
-
+        });
+    }
 }
