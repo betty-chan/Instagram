@@ -29,6 +29,7 @@ export default (app: Application) => {
   apiV2Router.get('/topic/detail', topic.topicDetail); // 获取帖子详情
   apiV2Router.post('/topic/discuss/add', topic.addDiscuss); // 新增评论
   apiV2Router.put('/topic/like', topic.putLikeTopic); // 点赞
-  apiV2Router.get('/topic/friend/list', topic.friendsTopicList); // 新增评论
+  apiV2Router.put('/topic/collect', topic.putCollectTopic); // 收藏
+  apiV2Router.get('/topic/friend/list', topic.friendsTopicList); // 查询帖子列表
   // router.put('/user/findPwd', user.findPwd); // 找回密码
 }

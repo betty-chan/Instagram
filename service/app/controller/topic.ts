@@ -116,6 +116,31 @@ class TopicController extends Controller {
     }
 
     /**
+     * 收藏帖子
+     */
+    public async putCollectTopic() {
+        const { ctx } = this;
+        const { topicId, status } = ctx.request.body
+        let userId = ctx.user.userId
+        // 新帖子
+        let topicStatus = {
+            topicId: topicId,
+            userId,
+            status
+        }
+        // 查询条件
+        let query = {
+            topicId: topicId,
+            userId,
+        }
+        // 未曾创建进行创建操作，否则进行更新
+        await ctx.service.topic.putTopicCollect(query, topicStatus)
+        ctx.returnBody(200, "更新成功", {
+            status: +status
+        })
+    }
+
+    /**
      * 搜索帖子
      */
     public async searchTopic() {

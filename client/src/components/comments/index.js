@@ -19,31 +19,26 @@ class Comments extends React.Component {
             replyContent: '',
             selfLove: false,
             topicLike: props.topicLike,
-            showMoreComments: false
+            showMoreComments: false,
+            topicCollect: props.topicCollect,
         }
         this._handleKeyPress = this._handleKeyPress.bind(this)
     }
-
     handelChange(event) {
         this.setState({ replyContent: event.target.value })
     }
-
     __showMoreComments() {
         this.setState({
             showMoreComments: true
         })
     }
-
-
     // 聚焦
     focus() {
         this.refs.textInput.focus();
     }
-
     // 点赞
     async topicLike() {
         let response = await API.topicLike({ topicId: this.props.topicId, status: this.props.topicLike ? 0 : 1 })
-
         // 确定点赞数，status: 1点赞，0取消
         let dotCounts;
         if (response.data.status) {
@@ -58,7 +53,22 @@ class Comments extends React.Component {
             index: this.props.topicIndex
         })
     }
-
+    async topicCollect() {
+        let response = await API.topicCollect({ topicId: this.props.topicId, status: this.props.topicCollect ? 0 : 1 })
+        // 确定点赞数，status: 1点赞，0取消
+        let colCounts;
+        if (response.data.status) {
+            colCounts = this.props.colCounts + 1;
+        } else {
+            colCounts = this.props.colCounts - 1 >= 0 ? this.props.colCounts - 1 : 0;
+        }
+        // 更新点赞状态
+        this.props.topicCollectFn({
+            topicCollecCounts: colCounts,
+            topicCollect: response.data.status === 1,
+            index: this.props.topicIndex
+        })
+    }
     // 添加评论
     async _handleKeyPress(event) {
         if (event.key === 'Enter') {
@@ -68,27 +78,22 @@ class Comments extends React.Component {
                 })
                 return
             }
-
             let response = await API.addDiscuss({ topicId: this.props.topicId, replyContent: this.state.replyContent })
             notification['success']({
                 message: response.message
             })
-
-
             // 添加评论
             this.props.addComments({
                 replyContent: this.state.replyContent,
                 replyName: this.props.userInfo.username,
                 index: this.props.topicIndex
             })
-
             // 清空评论
             this.setState({
                 replyContent: ''
             })
         }
     }
-
     // 评论时间处理
     _handlerCommentTime = () => {
         if (this.props.createdAt) {
@@ -165,7 +170,10 @@ class Comments extends React.Component {
                         <span className={`favorite  ${this.props.topicLike && 'active'}`} onClick={this.topicLike.bind(this)}></span>
                         <span >{this.props.dotCounts}</span>
                     </div>
-                    <span className="fl-right collect"></span>
+                    <div className="fl-right">
+                        <span className={`collect  ${this.props.topicCollect && 'active'}`} onClick={this.topicCollect.bind(this)}></span>
+                        <span >{this.props.colCounts}</span>
+                    </div>
                 </div>
                 {/* 弹窗类型、与列表类型，评论列表位置不同 */}
                 {

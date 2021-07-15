@@ -48,6 +48,10 @@ exports.deleteTopic = (data) => {
 exports.topicLike = (data) => {
     return instance.put('/topic/like', data);
 }
+// 收藏
+exports.topicCollect = (data) => {
+    return instance.put('/topic/collect', data);
+}
 
 // 获取好友帖子列表
 exports.frientTopicList = (data) => {

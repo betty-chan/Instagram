@@ -89,6 +89,17 @@ export default class TopicService extends Service {
             // userId: ctx.user.userId,
             status: 1
         })
+        // 查询用户是否已收藏
+        let topicCollect = await ctx.service.topic.queryTopicCollect({
+            topicId: +topicId, // 帖子id
+            userId: ctx.user.userId,
+            status: 1
+        })
+        // 查询收藏数量
+        let topicCollectCounts = await ctx.service.topic.queryTopicCollectCounts({
+            topicId: +topicId, // 帖子id
+            status: 1
+        })
         // 处理帖子数据
         let disscussList = discuss.map((item) => {
             return {
@@ -110,7 +121,9 @@ export default class TopicService extends Service {
                 created_at: topic.created_at,
                 topicId,
                 topicLike: !!topicLike,
-                topicLikeCounts: topicLikeCounts.count
+                topicLikeCounts: topicLikeCounts.count,
+                topicCollect: !!topicCollect,
+                topicCollectCounts: topicCollectCounts.count
             },
             discuss: disscussList
         }
@@ -185,6 +198,43 @@ export default class TopicService extends Service {
     public async countsTopic(query: queryTopicParams) {
         let { ctx } = this
         return await ctx.model.Discuss.findAll({
+            where: query
+        });
+    }
+
+    /*
+     * 创建或更新收藏状态
+     * @interface insertTopicParams
+     */
+    public async putTopicCollect(query: queryTopicParams, topicStatus) {
+        let { ctx } = this
+        let result = await this.queryTopicCollect(query)
+        if (!result) {
+            return await ctx.model.TopicCollect.create(topicStatus)
+        } else {
+            return await ctx.model.TopicCollect.update(topicStatus, {
+                where: query
+            })
+        }
+    }
+
+    /*
+     * 查找是否点过赞
+     * @interface insertTopicParams
+     */
+    public async queryTopicCollect(query: queryTopicParams) {
+        let { ctx } = this
+        return await ctx.model.TopicCollect.findOne({
+            where: query
+        });
+    }
+    /*
+     * 查询帖子点赞数量
+     * @interface insertTopicParams
+     */
+    public async queryTopicCollectCounts(query: queryTopicParams) {
+        let { ctx } = this
+        return await ctx.model.TopicCollect.findAndCountAll({
             where: query
         });
     }

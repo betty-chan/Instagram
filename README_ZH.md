@@ -115,16 +115,15 @@ class Upload extends React.Component{
 ```
 
 
-* 在/service文件下
+* cd service
 * npm install
 * npm run dev
-
 
 > 运行前端项目
 
 * cd client
 * npm install
-* npm start
+* npm run dev
 
 ## 目标功能
 

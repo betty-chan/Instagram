@@ -27,6 +27,12 @@ import Footer from '@components/footer'
                     type: 'TOPIC_LIKE',
                     info
                 })
+            },
+            topicCollectFn: info => {
+                dispatch({
+                    type: 'TOPIC_COLLECT',
+                    info
+                })
             }
         };
     }
@@ -56,12 +62,15 @@ class DynamicList extends React.Component {
                                 <div className="comments-content">
                                     <Comments
                                         topicLikeFn={this.props.topicLikeFn}
+                                        topicCollectFn={this.props.topicCollectFn}
                                         addComments={this.props.addComments}
                                         topicIndex={index}
                                         createdAt={item.topic.created_at}
                                         discuss={item.discuss}
                                         topicId={item.topic.topicId}
                                         topicLike={item.topic.topicLike}
+                                        topicCollect={item.topic.topicCollect}
+                                        colCounts={item.topic.topicCollectCounts}
                                         dotCounts={item.topic.topicLikeCounts}>
                                     </Comments>
                                 </div>

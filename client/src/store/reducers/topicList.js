@@ -9,7 +9,8 @@ const defaultValue = [
             topicImgList: [],
             topicTitle: "",
             createdAt: '',
-            topicLikeCounts: 0 // 点赞数
+            topicLikeCounts: 0, // 点赞数
+            topicCollectCounts: 0,
         },
         discuss: []
     }
@@ -23,6 +24,8 @@ const topicList = (state = defaultValue, action) => {
             return addComments(state, action.info)
         case 'TOPIC_LIKE':
             return topicLike(state, action.info)
+        case 'TOPIC_COLLECT':
+            return topicCollect(state, action.info)
         default:
             return state
     }
@@ -40,6 +43,21 @@ function topicLike(state, {
         {
             topicLikeCounts,
             topicLike
+        }
+    )
+    return newArray
+}
+// 收藏
+function topicCollect(state, {
+    index, topicCollectCounts, topicCollect
+}) {
+    let newArray = [...state]
+    let targetTopic = newArray[index].topic
+    Object.assign(
+        targetTopic,
+        {
+            topicCollectCounts,
+            topicCollect
         }
     )
     return newArray
